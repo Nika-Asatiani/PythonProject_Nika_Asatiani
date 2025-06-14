@@ -1,7 +1,7 @@
-# Import tools from the cryptography library for real encryption (used in Part 3)
+# Import tools from the cryptography library for real encryption
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 from cryptography.hazmat.backends import default_backend
-import base64  # For decoding base64 string in XOR part
+import base64  #libraries
 
 
 # --------------------------
@@ -15,7 +15,7 @@ def caesar_brute_force(ciphertext):
     for shift in range(26):  # Try every shift from 0 to 25
         result = ""  # Start with an empty string for the result
 
-        # For me to be able to do math operations on letters i need to convert them into digits.
+        # For me to be able to do math operations on letters I need to convert them into digits.
         # Therefore, before I continue I wanted to remind myself that In ASCII encoding:
         # 65 = 'A' (uppercase A)
         # 97 = 'a' (lowercase a)
@@ -65,7 +65,7 @@ def caesar_brute_word(word):
 
 cipher_word = "mznxpz"  # The encrypted word
 caesar_brute_word(cipher_word)  # Shift 21 - rescue. rescue and secure are anagrams of each other so
-# Secure must be answer to Part 2 of this second exercise.
+# Secure must be answered to Part 2 of this second exercise.
 
 
 # --------------------------
